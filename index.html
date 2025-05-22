@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Manuel Arone T.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">Manuel<span style="color: var(--accent-color)">.</span>Dev</a>
+      <div class="nav-links">
+        <a href="#home">Inicio</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#formacion">Formación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <button class="mode-toggle" aria-label="Cambiar modo">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <div class="header-content">
+      <h1 data-aos="fade-up">Manuel Arone T.</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Ingeniería de Software</p>
+      <div class="animated-text" data-aos="fade-up" data-aos-delay="400">
+        <span id="typed"></span>
+      </div>
+    </div>
+    <a href="#perfil" class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <div class="container">
+    <!-- Profile Section -->
+    <section id="perfil" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-user icon"></i>Perfil</h2>
+      <div class="card">
+        <p>Joven de 19 años, estudiante de Ingeniería de Software, apasionado por el desarrollo educativo, la programación, el diseño de plataformas interactivas y la ciberseguridad. Actualmente realizo prácticas como encargado tecnológico en una institución educativa y en un hospital, donde utilizo sistemas Debian y gestiono equipos Linux.</p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="formacion" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i>Formación Académica</h2>
+      <div class="card">
+        <p><strong>Carrera:</strong> Ingeniería en Software</p>
+        <p><strong>Especializaciones:</strong></p>
+        <ul>
+          <li>Desarrollo de aplicaciones web educativas con HTML, CSS y JavaScript</li>
+          <li>Creación de videojuegos interactivos y matemáticos en Python</li>
+          <li>Conexión e integración de bases de datos MySQL y MongoDB</li>
+          <li>Diseño de interfaces gráficas y experiencia de usuario (GUI)</li>
+          <li>Desarrollo de chatbots con Voiceflow</li>
+          <li>Fundamentos de ciberseguridad y uso ético de herramientas en Linux (Kali, Debian)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-code icon"></i>Habilidades Técnicas</h2>
+      <div class="card">
+        <div class="skills-container">
+          <div class="skill-group">
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>HTML, CSS, JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Python</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Java</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>MySQL y MongoDB</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Voiceflow (Chatbots)</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Linux (Kali, Debian)</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-project-diagram icon"></i>Proyectos Destacados</h2>
+      
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+        <button class="filter-btn" data-filter="mobile">Videojuegos</button>
+        <button class="filter-btn" data-filter="ai">Inteligencia Artificial</button>
+        <button class="filter-btn" data-filter="data">Datos</button>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card" data-category="web ai">
+          <div class="project-img">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Chatbots Educativos</h3>
+            <p>Desarrollo de chatbots con Voiceflow para educación y salud, mejorando la accesibilidad de información.</p>
+            <div class="project-tags">
+              <span class="project-tag">Voiceflow</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Educación</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Detalles</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Plataforma Educativa Interactiva</h3>
+            <p>Desarrollo de una plataforma educativa con interfaz interactiva utilizando HTML, CSS y JavaScript.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Código</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="mobile">
+          <div class="project-img">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Juegos Matemáticos</h3>
+            <p>Juegos educativos para nivel primario desarrollados en Python, enfocados en el aprendizaje matemático.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pygame</span>
+              <span class="project-tag">Educación</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Código</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="ai">
+          <div class="project-img">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Clasificador de Imágenes</h3>
+            <p>Modelo de clasificación de imágenes desarrollado con TensorFlow y Keras para aplicaciones educativas.</p>
+            <div class="project-tags">
+              <span class="project-tag">TensorFlow</span>
+              <span class="project-tag">Keras</span>
+              <span class="project-tag">Machine Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Detalles</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="web data">
+          <div class="project-img">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Integración MongoDB Cloud</h3>
+            <p>Proyecto de integración de MongoDB en la nube con backend en PHP para aplicaciones web.</p>
+            <div class="project-tags">
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Cloud</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Código</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="data ai">
+          <div class="project-img">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Análisis de Datos con Python</h3>
+            <p>Proyecto de clustering y PCA desde Excel usando Python para análisis estadístico educativo.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Scikit-learn</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Demo</a>
+              <a href="#" class="project-link">Código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-briefcase icon"></i>Experiencia Profesional</h2>
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h3>Encargado de tecnología</h3>
+              <p class="timeline-date">2024 - Presente</p>
+              <p>Encargado de tecnología en una institución educativa y un hospital. Realizo mantenimiento de sistemas, revisión de equipos (XO, Linux), implementación de software educativo, pruebas de seguridad y soporte técnico en entornos Debian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" data-aos="fade-up">
+      <h2 class="section-title"><i class="fas fa-envelope icon"></i>Contacto</h2>
+      <div class="card">
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:aronetorviscom@gmail.com">aronetorviscom@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/manuel_arone_torvisco" target="_blank">manuel_arone_torvisco</a>
+              </div>
+            </div>
+            
+            <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/shaka16/Portafolio-Manuel" target="_blank">shaka16/Portafolio-Manuel</a>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form" data-aos="fade-left">
+            <div class="form-group">
+              <input type="text" class="form-input" id="name" placeholder=" " required>
+              <label for="name" class="form-label">Nombre</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" class="form-input" id="email" placeholder=" " required>
+              <label for="email" class="form-label">Email</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea class="form-input form-textarea" id="message" placeholder=" " required></textarea>
+              <label for="message" class="form-label">Mensaje</label>
+            </div>
+            
+            <button type="submit" class="form-submit">
+              Enviar Mensaje <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="social-links" data-aos="fade-up">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <p>&copy; 2025 Manuel Arone T. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
